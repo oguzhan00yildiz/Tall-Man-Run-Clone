@@ -10,10 +10,11 @@ public class ScaleControl : MonoBehaviour
     public Transform HipSpine;
     public Transform ShoulderSpine;
     public Transform NeckSpine;
-    public float firstY;
-    public float value;
+    public Transform BackSpine;
     public float ScaleRate;
+    public float HeightRate;
     public bool TriggerIncrease;
+    public bool TriggerIncreaseHeight;
 
     public List<GameObject> Spines=new List<GameObject>();
     public List<GameObject> SpinesVertical=new List<GameObject>();
@@ -26,6 +27,12 @@ public class ScaleControl : MonoBehaviour
             IncreaseScale();
             TriggerIncrease=false;
         }
+
+        if (TriggerIncreaseHeight)
+        {
+            IncreaseHeight();
+            TriggerIncreaseHeight=false;
+        }
     }
 
     private void Start()
@@ -34,7 +41,14 @@ public class ScaleControl : MonoBehaviour
         
     }
 
+    private void IncreaseHeight()
+    {
+        BackSpine.transform.position+=new Vector3(0,HeightRate,0);
+
+    }
+
     
+
     private void IncreaseScale()
     {
         HipSpine.transform.localScale+=new Vector3(ScaleRate/2,ScaleRate/2,ScaleRate/5);

@@ -285,10 +285,11 @@ MonoBehaviour:
   HipSpine: {fileID: 512723564}
   ShoulderSpine: {fileID: 551392018}
   NeckSpine: {fileID: 307155924}
-  firstY: 0
-  value: 0
+  BackSpine: {fileID: 425489934702925418}
   ScaleRate: 0.3
+  HeightRate: 0.3
   TriggerIncrease: 0
+  TriggerIncreaseHeight: 0
   Spines:
   - {fileID: 5666119959576095259}
   - {fileID: 8900526401964384984}
