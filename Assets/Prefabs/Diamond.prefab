@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1676179191346310485}
   - component: {fileID: 2372596066413847280}
   - component: {fileID: 507165976174188090}
+  - component: {fileID: 513835874}
+  - component: {fileID: 513835870}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020195062052911087}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.18, y: 2.447, z: 5.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -84,6 +86,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &513835874
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020195062052911087}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.36389655, y: 0.26937371, z: 0.36389655}
+  m_Center: {x: 0, y: 0.13465482, z: 0}
+--- !u!114 &513835870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020195062052911087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23526af4d2ea4f4aa06a28fdbf13e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diamondPS: {fileID: 1042909798837102334}
 --- !u!1 &9129378806156843391
 GameObject:
   m_ObjectHideFlags: 0
