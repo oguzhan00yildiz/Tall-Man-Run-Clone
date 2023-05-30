@@ -92,6 +92,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4548350178848381377}
+  - component: {fileID: 1156138287}
+  - component: {fileID: 1156138286}
+  - component: {fileID: 6422105582341758606}
   m_Layer: 0
   m_Name: RotatingHalfObsM
   m_TagString: Untagged
@@ -116,6 +119,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1156138287
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6400656978361088622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1481387, y: 0.5730095, z: 2.1030579}
+  m_Center: {x: 0.0055315793, y: 2.606422, z: -0.94293785}
+--- !u!114 &1156138286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6400656978361088622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa955ea02c3badb439e548d03b5c279f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  degreesPerSecond: 50
+--- !u!114 &6422105582341758606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6400656978361088622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122b71a03feb19843a70725a0dfa19a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caplsulePrefab: {fileID: 6230435891983030979, guid: dc4073cc9bef03f4b885bed21c27a65f,
+    type: 3}
 --- !u!1 &8168847495716078283
 GameObject:
   m_ObjectHideFlags: 0
