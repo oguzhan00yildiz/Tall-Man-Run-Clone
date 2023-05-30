@@ -32,6 +32,7 @@ public class ScaleControl : MonoBehaviour
         {
             IncreaseHeight();
             TriggerIncreaseHeight=false;
+            
         }
     }
 
@@ -40,6 +41,9 @@ public class ScaleControl : MonoBehaviour
 
         
     }
+
+
+    
 
     private void IncreaseHeight()
     {
