@@ -1,25 +1,74 @@
 using UnityEngine;
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 
 public class ScaleControl : MonoBehaviour
 {
-    public List<GameObject> thicknespieces=new List<GameObject>();
+    private Transform originalParent;
+    private Vector3 originalScale;
+    public Transform Target;
+    public Transform HipSpine;
+    public Transform ShoulderSpine;
+    public Transform NeckSpine;
+    public float firstY;
+    public float value;
+    public float ScaleRate;
+    public bool TriggerIncrease;
 
-    [SerializeField] private GameObject root;
+    public List<GameObject> Spines=new List<GameObject>();
+    public List<GameObject> SpinesVertical=new List<GameObject>();
+
+
+    private void Update()
+    {
+        if (TriggerIncrease)
+        {
+            IncreaseScale();
+            TriggerIncrease=false;
+        }
+    }
 
     private void Start()
     {
-        Thicknes(1f);
+
+        
     }
 
-    public void Thicknes(float value)
+    
+    private void IncreaseScale()
     {
-        foreach (GameObject item in thicknespieces)
+        HipSpine.transform.localScale+=new Vector3(ScaleRate/2,ScaleRate/2,ScaleRate/5);
+
+        ShoulderSpine.transform.localScale+=new Vector3(ScaleRate/1.5f,ScaleRate/1.5f,ScaleRate/10);
+
+        NeckSpine.transform.localScale+=new Vector3(ScaleRate/2,0,ScaleRate/2);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        foreach (var item in Spines)
         {
-            item.transform.localScale += new Vector3(value, 0, value);
+             originalParent = item.transform.parent;
+
+            // Objeyi unparent yap
+            item.transform.SetParent(null,true);
+
+            item.transform.localScale +=new Vector3(ScaleRate,ScaleRate,ScaleRate);
+
+            item.transform.SetParent(originalParent,true);
+
         }
 
-        //root.transform.localScale += new Vector3(value, value * 0.5f, value);
+        foreach (var item in SpinesVertical)
+        {
+            originalParent = item.transform.parent;
+
+            // Objeyi unparent yap
+            item.transform.SetParent(null,true);
+
+            item.transform.localScale +=new Vector3(ScaleRate,0,ScaleRate);
+
+            item.transform.SetParent(originalParent,true);
+        }
+
+
     }
 }
