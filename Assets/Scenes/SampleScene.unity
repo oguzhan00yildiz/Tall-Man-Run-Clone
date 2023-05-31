@@ -5617,10 +5617,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 85681764}
     m_Modifications:
+    - target: {fileID: 74963652896227176, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade17
+      objectReference: {fileID: 0}
+    - target: {fileID: 224986917361652394, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade2
+      objectReference: {fileID: 0}
+    - target: {fileID: 232627218123391282, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade1
+      objectReference: {fileID: 0}
+    - target: {fileID: 389047739973144595, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade
+      objectReference: {fileID: 0}
     - target: {fileID: 1627596742941050583, guid: 0b07c5be7eeb31a489004b6263b565bb,
         type: 3}
       propertyPath: m_Name
       value: Final_Jump_Platforms
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788833002782871131, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade5
       objectReference: {fileID: 0}
     - target: {fileID: 2152072124203129965, guid: 0b07c5be7eeb31a489004b6263b565bb,
         type: 3}
@@ -5676,6 +5701,81 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559448590161770540, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3115553177596358280, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3473848687611917061, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563433181317350990, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4676384517996550288, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684081710228310993, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4777780404716195494, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7101475204448722717, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7139021904661735201, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7310745183341954267, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867663514827929728, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364282968877634009, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390898719744706431, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade16
+      objectReference: {fileID: 0}
+    - target: {fileID: 9037666110310594150, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148325682198009008, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_Name
+      value: Barricade4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b07c5be7eeb31a489004b6263b565bb, type: 3}
