@@ -7539,6 +7539,8 @@ GameObject:
   - component: {fileID: 4805485082557755167}
   - component: {fileID: 2733193536111244045}
   - component: {fileID: 8692544040595354979}
+  - component: {fileID: 932916408}
+  - component: {fileID: 932916407}
   m_Layer: 0
   m_Name: Final_Jump_point (1)
   m_TagString: Untagged
@@ -7611,6 +7613,33 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &932916408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733141898791075364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5591328, y: 0.11358155, z: 1.5751657}
+  m_Center: {x: 0.00000029802328, y: 0, z: 0.0000019073486}
+--- !u!114 &932916407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733141898791075364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c3a2209316233d469e53469a5321fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  landPoint: {fileID: 7041831475163109185}
+  jumpPower: 4
 --- !u!1 &2390880043554985480
 GameObject:
   m_ObjectHideFlags: 0
@@ -8115,7 +8144,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (7)
+      value: Barricade3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -8205,7 +8234,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (15)
+      value: Barricade9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -8295,7 +8324,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (18)
+      value: Barricade13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -8385,7 +8414,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (10)
+      value: Barricade4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -8475,7 +8504,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (14)
+      value: Barricade10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -8565,7 +8594,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (22)
+      value: Barricade16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -8655,7 +8684,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (16)
+      value: Barricade8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11125,7 +11154,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (24)
+      value: Barricade19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11215,7 +11244,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (11)
+      value: Barricade7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11305,7 +11334,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (12)
+      value: Barricade6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11395,7 +11424,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (19)
+      value: Barricade12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11485,7 +11514,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (9)
+      value: Barricade5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11575,7 +11604,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (6)
+      value: Barricade
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11665,7 +11694,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (5)
+      value: Barricade1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11755,7 +11784,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (8)
+      value: Barricade2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11845,7 +11874,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (21)
+      value: Barricade17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -11935,7 +11964,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (23)
+      value: Barricade15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -12025,7 +12054,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (20)
+      value: Barricade18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -12115,7 +12144,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (17)
+      value: Barricade14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}
@@ -12220,6 +12249,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9032293054970210273}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4368172992056156024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4740030485962193049, guid: c7df7b9c39dcc9547a1ab1a998b9dedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 9032293054970210273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &919132148478452825
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4368172992056156024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.1759262
+  m_Height: 5.429137
+  m_Direction: 1
+  m_Center: {x: 0.4009635, y: 2.685216, z: 0.15937875}
+--- !u!114 &919132148478452826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4368172992056156024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8ad56600170034a8a9685c9ae8c0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &7041831475163109185 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2080868393685692576, guid: c7df7b9c39dcc9547a1ab1a998b9dedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 9032293054970210273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9034543204056690090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12300,7 +12367,7 @@ PrefabInstance:
     - target: {fileID: 6838111044880078214, guid: e22c46f82c6502344a96fc7629957c89,
         type: 3}
       propertyPath: m_Name
-      value: Barricade (13)
+      value: Barricade11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22c46f82c6502344a96fc7629957c89, type: 3}

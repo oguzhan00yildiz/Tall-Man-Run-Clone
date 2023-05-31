@@ -2665,39 +2665,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910623793}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &932916403 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1733141898791075364, guid: 0b07c5be7eeb31a489004b6263b565bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3485706813322918688}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &932916407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932916403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c3a2209316233d469e53469a5321fb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  landPoint: {fileID: 5901452234260376673}
-  jumpPower: 4
---- !u!65 &932916408
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932916403}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5591328, y: 0.11358155, z: 1.5751657}
-  m_Center: {x: 0.00000029802328, y: 0, z: 0.0000019073486}
 --- !u!1 &959028086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5291,38 +5258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &919132148478452824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4368172992056156024, guid: 0b07c5be7eeb31a489004b6263b565bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3485706813322918688}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &919132148478452825
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148478452824}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.1759262
-  m_Height: 5.429137
-  m_Direction: 1
-  m_Center: {x: 0.4009635, y: 2.685216, z: 0.15937875}
---- !u!114 &919132148478452826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148478452824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b8ad56600170034a8a9685c9ae8c0e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1078352050785699465
 GameObject:
   m_ObjectHideFlags: 0
@@ -5717,35 +5652,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 85681764}
     m_Modifications:
-    - target: {fileID: 74963652896227176, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade17
-      objectReference: {fileID: 0}
-    - target: {fileID: 224986917361652394, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade2
-      objectReference: {fileID: 0}
-    - target: {fileID: 232627218123391282, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade1
-      objectReference: {fileID: 0}
-    - target: {fileID: 389047739973144595, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade
-      objectReference: {fileID: 0}
     - target: {fileID: 1627596742941050583, guid: 0b07c5be7eeb31a489004b6263b565bb,
         type: 3}
       propertyPath: m_Name
       value: Final_Jump_Platforms
-      objectReference: {fileID: 0}
-    - target: {fileID: 1788833002782871131, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade5
       objectReference: {fileID: 0}
     - target: {fileID: 2152072124203129965, guid: 0b07c5be7eeb31a489004b6263b565bb,
         type: 3}
@@ -5801,81 +5711,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2559448590161770540, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3115553177596358280, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade14
-      objectReference: {fileID: 0}
-    - target: {fileID: 3473848687611917061, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4563433181317350990, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4676384517996550288, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684081710228310993, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4777780404716195494, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7101475204448722717, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7139021904661735201, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7310745183341954267, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7867663514827929728, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade19
-      objectReference: {fileID: 0}
-    - target: {fileID: 8364282968877634009, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8390898719744706431, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade16
-      objectReference: {fileID: 0}
-    - target: {fileID: 9037666110310594150, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9148325682198009008, guid: 0b07c5be7eeb31a489004b6263b565bb,
-        type: 3}
-      propertyPath: m_Name
-      value: Barricade4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b07c5be7eeb31a489004b6263b565bb, type: 3}
@@ -6269,12 +6104,6 @@ Transform:
   m_Father: {fileID: 2997654318696059632}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &5901452234260376673 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7041831475163109185, guid: 0b07c5be7eeb31a489004b6263b565bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3485706813322918688}
-  m_PrefabAsset: {fileID: 0}
 --- !u!137 &5949294206001541072
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
