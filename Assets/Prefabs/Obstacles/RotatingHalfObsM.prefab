@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa955ea02c3badb439e548d03b5c279f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  degreesPerSecond: 50
+  degreesPerSecond: 75
 --- !u!114 &6422105582341758606
 MonoBehaviour:
   m_ObjectHideFlags: 0
