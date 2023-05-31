@@ -2683,7 +2683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3a2209316233d469e53469a5321fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  landPoint: {fileID: 8700783697229342863}
+  landPoint: {fileID: 5901452234260376673}
   jumpPower: 4
 --- !u!65 &932916408
 BoxCollider:
@@ -5311,6 +5311,18 @@ CapsuleCollider:
   m_Height: 5.429137
   m_Direction: 1
   m_Center: {x: 0.4009635, y: 2.685216, z: 0.15937875}
+--- !u!114 &919132148478452826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148478452824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b8ad56600170034a8a9685c9ae8c0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1078352050785699465
 GameObject:
   m_ObjectHideFlags: 0
@@ -6257,6 +6269,12 @@ Transform:
   m_Father: {fileID: 2997654318696059632}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &5901452234260376673 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7041831475163109185, guid: 0b07c5be7eeb31a489004b6263b565bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 3485706813322918688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!137 &5949294206001541072
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -6945,12 +6963,6 @@ Transform:
   m_Father: {fileID: 1563480444503425097}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &8700783697229342863 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5251429490690102191, guid: 0b07c5be7eeb31a489004b6263b565bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3485706813322918688}
-  m_PrefabAsset: {fileID: 0}
 --- !u!137 &8819246066766217988
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
