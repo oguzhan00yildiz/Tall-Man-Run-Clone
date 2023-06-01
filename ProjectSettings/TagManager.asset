@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BonusRamp
   - KickPoint
+  - Barricade
   layers:
   - Default
   - TransparentFX

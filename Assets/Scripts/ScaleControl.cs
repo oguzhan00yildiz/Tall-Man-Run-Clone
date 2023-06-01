@@ -25,6 +25,12 @@ public class ScaleControl : MonoBehaviour
 
     private void Update()
     {
+        if (HipSpine.transform.localScale.x<0||HipSpine.transform.localScale.y<0||HipSpine.transform.localScale.z<0 )
+        {
+            Destroy(gameObject);
+            //ölme krranı getir
+        }
+
         if (TriggerIncrease)
         {
             IncreaseScale();
