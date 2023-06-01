@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed = 30f;
 
     private bool isMoving = false;
+    [SerializeField] private Animator anim;
 
     void Update()
     {
@@ -14,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             isMoving = true;
+
+            anim.SetBool("isRunning",true);
 
             // Mouse'u sağa veya sola çekince karakterin dönmesi
             float mouseX = Input.GetAxis("Mouse X");
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             isMoving = false;
+            anim.SetBool("isRunning",false);
         }
 
         if (isMoving)
@@ -35,5 +39,9 @@ public class PlayerMovement : MonoBehaviour
             // Karakterin ileri doğru hareketi
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
+    }
+
+    void Start()
+    {
     }
 }

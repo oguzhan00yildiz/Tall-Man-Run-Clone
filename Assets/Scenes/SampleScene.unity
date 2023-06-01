@@ -444,6 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotationSpeed: 100
+  anim: {fileID: 4720556327741442953}
 --- !u!114 &267509750
 MonoBehaviour:
   m_ObjectHideFlags: 0
