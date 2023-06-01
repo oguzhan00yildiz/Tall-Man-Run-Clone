@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScaleControl : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class ScaleControl : MonoBehaviour
     public GameObject StartPanel;
     public GameObject DeathPanel;
     public GameObject BossPanel;
+    public GameObject EndPanel;
     public bool BossPanelActivated;
 
     public List<GameObject> Spines=new List<GameObject>();
@@ -34,6 +36,7 @@ public class ScaleControl : MonoBehaviour
         if (BossPanelActivated)
             {
                 BossPanel.SetActive(true);
+                EndPanel.SetActive(true);
             }
 
         if (HipSpine.transform.localScale.x<0||HipSpine.transform.localScale.y<0||HipSpine.transform.localScale.z<0 )
@@ -187,6 +190,11 @@ public class ScaleControl : MonoBehaviour
             ScaleRate=other.GetComponent<GateManager>().ScaleMultiplier;
         }
         
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
 
 }
