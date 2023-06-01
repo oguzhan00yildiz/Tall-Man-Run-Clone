@@ -43,9 +43,10 @@ public class ScaleControl : MonoBehaviour
         {
             DeathPanel.SetActive(true);
             
-            Destroy(gameObject);
+            //Destroy(gameObject);
             //ölme krranı getir
             
+            gameObject.SetActive(false);
             
         }
 
@@ -185,8 +186,7 @@ public class ScaleControl : MonoBehaviour
     {
         if (other.CompareTag("Gate"))
         {
-            Debug.Log(other.GetComponent<GateManager>().ScaleMultiplier);
-            Debug.Log("scalerate  "+ScaleRate);
+            
             ScaleRate=other.GetComponent<GateManager>().ScaleMultiplier;
         }
         
@@ -194,7 +194,15 @@ public class ScaleControl : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        Debug.Log("asdasd");
+        SceneManager.LoadScene(1);
     }
+
+    public void TryAgain()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
 
 }
