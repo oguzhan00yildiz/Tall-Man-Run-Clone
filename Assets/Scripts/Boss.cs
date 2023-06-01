@@ -17,6 +17,8 @@ public class Boss : MonoBehaviour
             animator.SetTrigger("BossDead");
             other.transform.GetComponent<Rigidbody>().useGravity=true;
             other.transform.GetComponent<Rigidbody>().isKinematic=false;
+
+            ScaleControl.instance.BossPanelActivated=true;
         }
     }
 }

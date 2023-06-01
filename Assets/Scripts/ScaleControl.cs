@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class ScaleControl : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class ScaleControl : MonoBehaviour
     public bool TriggerIncreaseHeight;
     public bool TriggerDecrease;
     public bool TriggerDecreaseHeight;
+    public GameObject StartPanel;
+    public GameObject DeathPanel;
+    public GameObject BossPanel;
+    public bool BossPanelActivated;
 
     public List<GameObject> Spines=new List<GameObject>();
     public List<GameObject> SpinesVertical=new List<GameObject>();
@@ -25,10 +30,20 @@ public class ScaleControl : MonoBehaviour
 
     private void Update()
     {
+
+        if (BossPanelActivated)
+            {
+                BossPanel.SetActive(true);
+            }
+            
         if (HipSpine.transform.localScale.x<0||HipSpine.transform.localScale.y<0||HipSpine.transform.localScale.z<0 )
         {
+            DeathPanel.SetActive(true);
+            
             Destroy(gameObject);
             //ölme krranı getir
+            
+            
         }
 
         if (TriggerIncrease)
@@ -55,12 +70,20 @@ public class ScaleControl : MonoBehaviour
             TriggerDecreaseHeight =false;
             
         }
+
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            StartPanel.SetActive(false);
+        }
     }
 
     private void Start()
     {
         instance=this;
         
+        StartPanel.SetActive(true);
     }
 
 
