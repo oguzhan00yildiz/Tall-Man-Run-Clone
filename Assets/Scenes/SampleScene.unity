@@ -444,6 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   rotationSpeed: 100
+  isMoving: 0
   anim: {fileID: 4720556327741442953}
   BonusRun: 0
 --- !u!114 &267509750
@@ -3891,10 +3892,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 85681764}
     m_Modifications:
+    - target: {fileID: 932916408, guid: 0b07c5be7eeb31a489004b6263b565bb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.18818378
+      objectReference: {fileID: 0}
+    - target: {fileID: 932916408, guid: 0b07c5be7eeb31a489004b6263b565bb, type: 3}
+      propertyPath: m_Center.x
+      value: 0.00000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 932916408, guid: 0b07c5be7eeb31a489004b6263b565bb, type: 3}
+      propertyPath: m_Center.y
+      value: 0.037301123
+      objectReference: {fileID: 0}
+    - target: {fileID: 932916408, guid: 0b07c5be7eeb31a489004b6263b565bb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1627596742941050583, guid: 0b07c5be7eeb31a489004b6263b565bb,
         type: 3}
       propertyPath: m_Name
       value: Final_Jump_Platforms
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733141898791075364, guid: 0b07c5be7eeb31a489004b6263b565bb,
+        type: 3}
+      propertyPath: m_TagString
+      value: KickPoint
       objectReference: {fileID: 0}
     - target: {fileID: 2152072124203129965, guid: 0b07c5be7eeb31a489004b6263b565bb,
         type: 3}

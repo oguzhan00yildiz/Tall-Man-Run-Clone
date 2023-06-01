@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - BonusRamp
+  - KickPoint
   layers:
   - Default
   - TransparentFX

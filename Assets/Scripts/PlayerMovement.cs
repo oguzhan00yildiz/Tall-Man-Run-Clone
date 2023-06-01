@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {public float speed = 5f;
     public float rotationSpeed = 30f;
 
-    private bool isMoving = false;
+    public bool isMoving = false;
     public Animator anim;
     public static PlayerMovement instance;
     public bool BonusRun;
