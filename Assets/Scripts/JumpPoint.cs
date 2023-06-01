@@ -8,6 +8,7 @@ public class JumpPoint : MonoBehaviour
     [SerializeField] private Transform landPoint;
     [SerializeField] private int jumpPower;//default = 3f
 
+
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
@@ -28,6 +29,7 @@ public class JumpPoint : MonoBehaviour
     {
       yield return new WaitForSeconds(1f);
       PlayerMovement.instance.isMoving=false;  
-      PlayerMovement.instance.BonusRun=false;  
+      PlayerMovement.instance.BonusRun=false;
+      
     }
 }

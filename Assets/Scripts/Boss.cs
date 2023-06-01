@@ -15,6 +15,8 @@ public class Boss : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             animator.SetTrigger("BossDead");
+            other.transform.GetComponent<Rigidbody>().useGravity=true;
+            other.transform.GetComponent<Rigidbody>().isKinematic=false;
         }
     }
 }
