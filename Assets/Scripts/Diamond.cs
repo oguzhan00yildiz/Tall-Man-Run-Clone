@@ -34,7 +34,7 @@ public class Diamond : MonoBehaviour
 
     private IEnumerator DiamondCoroutine()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         Destroy(gameObject);
     }
 }
