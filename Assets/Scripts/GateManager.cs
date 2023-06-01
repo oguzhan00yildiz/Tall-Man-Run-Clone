@@ -6,10 +6,13 @@ public class GateManager : MonoBehaviour
 {
     [SerializeField] private bool height;
     [SerializeField] private bool increase;
+    public float ScaleMultiplier;
+
+    public static GateManager instance;
     
     void Start()
     {
-        
+        instance=this;
     }
 
     

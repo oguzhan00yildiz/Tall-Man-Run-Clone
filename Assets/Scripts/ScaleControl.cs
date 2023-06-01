@@ -12,7 +12,7 @@ public class ScaleControl : MonoBehaviour
     public Transform ShoulderSpine;
     public Transform NeckSpine;
     public Transform BackSpine;
-    public float ScaleRate;
+    private float ScaleRate;
     public float HeightRate;
     public bool TriggerIncrease;
     public bool TriggerIncreaseHeight;
@@ -35,7 +35,7 @@ public class ScaleControl : MonoBehaviour
             {
                 BossPanel.SetActive(true);
             }
-            
+
         if (HipSpine.transform.localScale.x<0||HipSpine.transform.localScale.y<0||HipSpine.transform.localScale.z<0 )
         {
             DeathPanel.SetActive(true);
@@ -96,7 +96,11 @@ public class ScaleControl : MonoBehaviour
     }
     private void DecreaseHeight()
     {
-        BackSpine.transform.position+=new Vector3(0,-HeightRate,0);
+        if (BackSpine.transform.localPosition.y>1f)
+        {
+            BackSpine.transform.position+=new Vector3(0,-HeightRate,0);
+        }
+        
     }
 
     
@@ -174,5 +178,15 @@ public class ScaleControl : MonoBehaviour
 
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Gate"))
+        {
+            Debug.Log(other.GetComponent<GateManager>().ScaleMultiplier);
+            Debug.Log("scalerate  "+ScaleRate);
+            ScaleRate=other.GetComponent<GateManager>().ScaleMultiplier;
+        }
+        
+    }
 
 }

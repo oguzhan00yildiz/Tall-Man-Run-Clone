@@ -22,6 +22,6 @@ public class ScoreTxtManager : MonoBehaviour
     void Update()
     {
         scoreTXT.text = ((int) diamondScore).ToString();
-        Debug.Log("DiamonScore: "+diamondScore.ToString() + " Bonus Multiplier: " + bonusMultiplier.ToString());
+//        Debug.Log("DiamonScore: "+diamondScore.ToString() + " Bonus Multiplier: " + bonusMultiplier.ToString());
     }
 }

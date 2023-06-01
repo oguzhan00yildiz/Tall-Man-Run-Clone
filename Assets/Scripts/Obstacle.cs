@@ -6,30 +6,10 @@ public class Obstacle : MonoBehaviour
 {
 
     [SerializeField] private GameObject caplsulePrefab;
-    private bool tc;
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (gameObject.CompareTag("Barricade"))
-        {
-            tc=false;
-        }
-        else
-        {
-            tc=true;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Player")&&tc)
+        if(other.gameObject.CompareTag("Player"))
         {
             float randX = Random.Range(-1, 1);
             float randY = Random.Range(2, 3);
@@ -54,20 +34,11 @@ public class Obstacle : MonoBehaviour
             capsuleRigidbody.useGravity = true;
             StartCoroutine(CapsuleCoroutine(capsule));
             }
-            ScaleControl.instance.TriggerDecrease=true;
-            ScaleControl.instance.TriggerDecreaseHeight=true;
         }
     }
 
 
-    void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Player")&&!tc)
-        {
-            ScaleControl.instance.TriggerDecrease=true;
-            ScaleControl.instance.TriggerDecreaseHeight=true;
-        }
-    }
+    
     
 
     private IEnumerator CapsuleCoroutine(GameObject capsule)
