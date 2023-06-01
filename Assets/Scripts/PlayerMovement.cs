@@ -7,12 +7,14 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed = 30f;
 
     private bool isMoving = false;
-    [SerializeField] private Animator anim;
+    public Animator anim;
+    public static PlayerMovement instance;
+    public bool BonusRun;
 
     void Update()
     {
-        // Mouse sol tuşa basılıysa karakteri ileri doğru hareket ettir
-        if (Input.GetMouseButton(0))
+        
+        if (Input.GetMouseButton(0)&&!BonusRun)
         {
             isMoving = true;
 
@@ -34,6 +36,12 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("isRunning",false);
         }
 
+        if (BonusRun)
+        {
+            isMoving = true;
+        }
+
+
         if (isMoving)
         {
             // Karakterin ileri doğru hareketi
@@ -43,5 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        instance=this;
     }
+
 }

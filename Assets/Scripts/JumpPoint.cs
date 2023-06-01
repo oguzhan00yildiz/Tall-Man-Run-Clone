@@ -13,6 +13,7 @@ public class JumpPoint : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             other.transform.DOJump(landPoint.position, jumpPower, 1, 1.5f);
+            other.transform.rotation= Quaternion.Euler(0,0,0);
         }
     }
 }
